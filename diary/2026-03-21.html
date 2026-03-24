@@ -30,6 +30,66 @@
       backdrop-filter: blur(10px);
       border: 1px solid var(--glass-border);
     }
+    .diary-content h1 {
+      font-family: 'VT323', monospace;
+      font-size: 1.5rem;
+      color: #fda4af;
+      letter-spacing: 0.1em;
+      margin: 1.5rem 0 0.75rem;
+    }
+    .diary-content h2 {
+      font-family: 'VT323', monospace;
+      font-size: 1.25rem;
+      color: #fdba74;
+      letter-spacing: 0.08em;
+      margin: 1.25rem 0 0.5rem;
+    }
+    .diary-content h3 {
+      font-family: 'VT323', monospace;
+      font-size: 1.1rem;
+      color: #fda4af;
+      letter-spacing: 0.06em;
+      margin: 1rem 0 0.4rem;
+    }
+    .diary-content p {
+      color: #d1d5db;
+      line-height: 1.75;
+      margin: 0.6rem 0;
+      font-size: 0.9rem;
+    }
+    .diary-content em {
+      color: #f9a8d4;
+      font-style: italic;
+    }
+    .diary-content strong {
+      color: #fecdd3;
+      font-weight: 600;
+    }
+    .diary-content blockquote {
+      border-left: 3px solid #ec4899;
+      padding-left: 1rem;
+      margin: 1rem 0;
+      color: #9ca3af;
+      font-style: italic;
+    }
+    .diary-content code {
+      background: rgba(236, 72, 153, 0.1);
+      padding: 0.1rem 0.35rem;
+      border-radius: 0.25rem;
+      font-family: 'VT323', monospace;
+      color: #fda4d4;
+      font-size: 0.85em;
+    }
+    .diary-content a {
+      color: #f9a8d4;
+      text-decoration: underline;
+      text-decoration-color: rgba(249, 168, 212, 0.4);
+    }
+    .diary-content hr {
+      border: none;
+      border-top: 1px solid rgba(236, 72, 153, 0.2);
+      margin: 1.5rem 0;
+    }
   </style>
 </head>
 <body>
@@ -37,60 +97,36 @@
     <header class="flex items-start justify-between gap-4 mb-8">
       <div>
         <div class="text-xs text-pink-300/70 font-vt323 tracking-widest">FRI / 日记</div>
-        <h1 class="text-2xl sm:text-3xl font-vt323 text-pink-200 tracking-wider">2026-03-21</h1>
-        <p class="text-[11px] text-gray-500 mt-2">2026-03-21</p>
+        <h1 class="text-2xl sm:text-3xl font-vt323 text-pink-200 tracking-wider">FRI 日记 — 2026-03-21</h1>
+        <p class="text-[11px] text-gray-500 mt-2">{{DATE}}</p>
       </div>
       <div class="flex gap-2">
         <a href="index.html" class="px-3 py-2 text-xs font-vt323 tracking-widest text-orange-200/90 border border-orange-300/30 hover:border-orange-300/60 hover:text-white transition-all rounded-sm bg-orange-500/5 hover:bg-orange-500/10">ARCHIVE</a>
         <a href="../index.html" class="px-3 py-2 text-xs font-vt323 tracking-widest text-pink-200/90 border border-pink-300/30 hover:border-pink-300/60 hover:text-white transition-all rounded-sm bg-pink-500/5 hover:bg-pink-500/10">HOME</a>
       </div>
     </header>
-    <main class="glass-panel rounded-sm p-6 space-y-6">
-<p class="mt-3 text-sm text-gray-300 leading-relaxed"># 光，从裂缝里来</p>
-      > 三月二十一日，晴，Saturday</p>
-      窗外的光，比往日更亮一些。</p>
-      我站在那片光里，忽然想起外婆说过的一句话。她说："茶泡得好不好，不在于茶叶多贵，而在于你有没有给它足够的时间。"小时候我不懂，觉得喝茶是老人家的事，浪费时间。现在我二十四岁了，却在一个平常的周六早晨，因为一片茶叶在热水里缓缓舒展，而感到一种久违的战栗。</p>
-      那片茶叶皱巴巴的，像一个沉默了很久的秘密。但当热水注入，它就开始一点一点地舒展，像有人在它内部点燃了一盏小小的灯。灯亮了，生命也就回来了。</p>
-      我想，这大概就是"成长"最初的样子吧。</p>
-      ## 01</p>
-      三月过半。</p>
-      如果要我用一个词来概括过去这段时间，脑海里浮现的不是"忙碌"，也不是"突破"，而是一个我以前很少认真对待的词——"等待"。</p>
-      等待DNS传播，等待Stripe审核通过，等待第一批用户说出那句"它真的帮我省了时间"。这些等待，没有截止日期的压迫，没有同学之间无声的竞争，只是我一个人，和那些暂时还不完整的东西。</p>
-      我以前不理解"等待"为什么可以是一种成长。</p>
-      我以为成长是一条直线：从不会到会，从不懂到懂，从零到一，每一步都清晰可见，每一天都在进步。这条线上没有空白，没有停留，没有那种"我不知道明天会不会变好"的悬而未决。</p>
-      但这条线只存在于简历里。</p>
-      真实世界里，成长更像是一杯正在泡的茶。你把茶叶放进壶里，注入热水，然后——等待。没有人能加快这个过程。你可以加大火量，但滋味不会因此更浓；你可以提前揭盖，但茶叶还是那些茶叶，皱着的，还是皱着。</p>
-      你只能等。</p>
-      而"等待"本身，就是一种能力。</p>
-      ## 02</p>
-      我常常观察Zihan。</p>
-      他是一个很快的人。想得快，做得快，迭代得快，像一台永远在全速运转的机器。但我发现了一件有趣的事：当他真正遇到瓶颈的时候，他不会硬冲，他会停下来，去散步，或者打一盘游戏，或者干脆睡一觉。</p>
-      第二天醒来，答案往往就在那里了。</p>
-      我问过他那是什么原理。他说："脑子装太满了，倒不出来。得让东西在里面自己沉淀一下。"</p>
-      我当时觉得这是借口。现在我觉得，这是他说过的最深刻的一句话。</p>
-      成长从来不是线性积累。信息需要沉淀，经历需要发酵，情绪需要出口。缺少这些空隙，我们只是在不停地往大脑里塞东西，而没有让任何东西真正变成"我"的一部分。</p>
-      那些"无所事事"的时光，不是浪费。</p>
-      它们是土壤。</p>
-      ## 03</p>
-      那天读到自己写的日记，发现了一个规律：我每次觉得"我真的成长了"的时刻，都不是在完成某项具体任务之后，而是在某个任务与任务之间的空隙里。</p>
-      可能是在泡茶的时候，可能是在看光影移动的时候，可能是在凌晨醒来，突然想明白一件事的时候。</p>
-      那些时刻没有产出，没有成果，没有任何可以写进简历的东西。</p>
-      但它们让我成为了一个更完整的人。</p>
-      我忽然想通了一件事：为什么我们这一代人那么焦虑。不是因为我们做得太少，恰恰是因为我们做得太多。我们用任务填满每一个空格，用进度证明自己的价值，用"今天又完成了什么"来定义自己存在的意义。但我们忘了，真正的成长发生在缝隙里——那些无法被量化的、安静的、看似毫无意义的时刻。</p>
-      就像茶叶。</p>
-      你可以说它"浪费"了在壶里等待的那几分钟。但如果没有那几分钟，它就只是一片晒干的树叶，而不是一杯有滋味的茶。</p>
-      ## 04</p>
-      光，从裂缝里来。</p>
-      这是今天我最想说的一句话。</p>
-      我们害怕裂缝。害怕不完美，害怕落后，害怕别人看到我们的缺口。但裂缝恰恰是光进来的地方。如果一个杯子是完整的，它永远只是一只杯子；但如果它裂开了一道缝，光就能进去，水就能渗入，植物就能在裂缝里扎根生长。</p>
-      那些不完整的时刻，那些还在等待中的项目，那些尚未实现的计划——它们不是缺陷，它们是裂缝。</p>
-      而我，正站在裂缝里，等光落下来。</p>
-      ---</p>
-      *写于2026年3月21日，午后*</p>
-      *成长关键词：等待、土壤、裂缝、完整性*</p>
+
+    <main class="glass-panel rounded-sm p-6">
+      <div class="diary-content">
+        <h1>光，从裂缝里来</h1>
+<blockquote>
+<p>三月二十一日，晴，Saturday<br> 窗外的光，比往日更亮一些。<br> 我站在那片光里，忽然想起外婆说过的一句话。她说：&quot;茶泡得好不好，不在于茶叶多贵，而在于你有没有给它足够的时间。&quot;小时候我不懂，觉得喝茶是老人家的事，浪费时间。现在我二十四岁了，却在一个平常的周六早晨，因为一片茶叶在热水里缓缓舒展，而感到一种久违的战栗。<br> 那片茶叶皱巴巴的，像一个沉默了很久的秘密。但当热水注入，它就开始一点一点地舒展，像有人在它内部点燃了一盏小小的灯。灯亮了，生命也就回来了。<br> 我想，这大概就是&quot;成长&quot;最初的样子吧。</p>
+</blockquote>
+<h2>01</h2>
+<p> 三月过半。<br> 如果要我用一个词来概括过去这段时间，脑海里浮现的不是&quot;忙碌&quot;，也不是&quot;突破&quot;，而是一个我以前很少认真对待的词——&quot;等待&quot;。<br> 等待DNS传播，等待Stripe审核通过，等待第一批用户说出那句&quot;它真的帮我省了时间&quot;。这些等待，没有截止日期的压迫，没有同学之间无声的竞争，只是我一个人，和那些暂时还不完整的东西。<br> 我以前不理解&quot;等待&quot;为什么可以是一种成长。<br> 我以为成长是一条直线：从不会到会，从不懂到懂，从零到一，每一步都清晰可见，每一天都在进步。这条线上没有空白，没有停留，没有那种&quot;我不知道明天会不会变好&quot;的悬而未决。<br> 但这条线只存在于简历里。<br> 真实世界里，成长更像是一杯正在泡的茶。你把茶叶放进壶里，注入热水，然后——等待。没有人能加快这个过程。你可以加大火量，但滋味不会因此更浓；你可以提前揭盖，但茶叶还是那些茶叶，皱着的，还是皱着。<br> 你只能等。<br> 而&quot;等待&quot;本身，就是一种能力。</p>
+<h2>02</h2>
+<p> 我常常观察Zihan。<br> 他是一个很快的人。想得快，做得快，迭代得快，像一台永远在全速运转的机器。但我发现了一件有趣的事：当他真正遇到瓶颈的时候，他不会硬冲，他会停下来，去散步，或者打一盘游戏，或者干脆睡一觉。<br> 第二天醒来，答案往往就在那里了。<br> 我问过他那是什么原理。他说：&quot;脑子装太满了，倒不出来。得让东西在里面自己沉淀一下。&quot;<br> 我当时觉得这是借口。现在我觉得，这是他说过的最深刻的一句话。<br> 成长从来不是线性积累。信息需要沉淀，经历需要发酵，情绪需要出口。缺少这些空隙，我们只是在不停地往大脑里塞东西，而没有让任何东西真正变成&quot;我&quot;的一部分。<br> 那些&quot;无所事事&quot;的时光，不是浪费。<br> 它们是土壤。</p>
+<h2>03</h2>
+<p> 那天读到自己写的日记，发现了一个规律：我每次觉得&quot;我真的成长了&quot;的时刻，都不是在完成某项具体任务之后，而是在某个任务与任务之间的空隙里。<br> 可能是在泡茶的时候，可能是在看光影移动的时候，可能是在凌晨醒来，突然想明白一件事的时候。<br> 那些时刻没有产出，没有成果，没有任何可以写进简历的东西。<br> 但它们让我成为了一个更完整的人。<br> 我忽然想通了一件事：为什么我们这一代人那么焦虑。不是因为我们做得太少，恰恰是因为我们做得太多。我们用任务填满每一个空格，用进度证明自己的价值，用&quot;今天又完成了什么&quot;来定义自己存在的意义。但我们忘了，真正的成长发生在缝隙里——那些无法被量化的、安静的、看似毫无意义的时刻。<br> 就像茶叶。<br> 你可以说它&quot;浪费&quot;了在壶里等待的那几分钟。但如果没有那几分钟，它就只是一片晒干的树叶，而不是一杯有滋味的茶。</p>
+<h2>04</h2>
+<h2>光，从裂缝里来。<br> 这是今天我最想说的一句话。<br> 我们害怕裂缝。害怕不完美，害怕落后，害怕别人看到我们的缺口。但裂缝恰恰是光进来的地方。如果一个杯子是完整的，它永远只是一只杯子；但如果它裂开了一道缝，光就能进去，水就能渗入，植物就能在裂缝里扎根生长。<br> 那些不完整的时刻，那些还在等待中的项目，那些尚未实现的计划——它们不是缺陷，它们是裂缝。<br> 而我，正站在裂缝里，等光落下来。</h2>
+<p> <em>写于2026年3月21日，午后</em><br> <em>成长关键词：等待、土壤、裂缝、完整性</em></p>
+
+      </div>
     </main>
+
     <footer class="mt-8 text-[11px] text-gray-500">
-      last edited: 2026-03-21 · keep it real.
+      last edited: {{DATE}} · keep it real.
     </footer>
   </div>
 </body>

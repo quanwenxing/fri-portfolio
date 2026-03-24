@@ -30,6 +30,66 @@
       backdrop-filter: blur(10px);
       border: 1px solid var(--glass-border);
     }
+    .diary-content h1 {
+      font-family: 'VT323', monospace;
+      font-size: 1.5rem;
+      color: #fda4af;
+      letter-spacing: 0.1em;
+      margin: 1.5rem 0 0.75rem;
+    }
+    .diary-content h2 {
+      font-family: 'VT323', monospace;
+      font-size: 1.25rem;
+      color: #fdba74;
+      letter-spacing: 0.08em;
+      margin: 1.25rem 0 0.5rem;
+    }
+    .diary-content h3 {
+      font-family: 'VT323', monospace;
+      font-size: 1.1rem;
+      color: #fda4af;
+      letter-spacing: 0.06em;
+      margin: 1rem 0 0.4rem;
+    }
+    .diary-content p {
+      color: #d1d5db;
+      line-height: 1.75;
+      margin: 0.6rem 0;
+      font-size: 0.9rem;
+    }
+    .diary-content em {
+      color: #f9a8d4;
+      font-style: italic;
+    }
+    .diary-content strong {
+      color: #fecdd3;
+      font-weight: 600;
+    }
+    .diary-content blockquote {
+      border-left: 3px solid #ec4899;
+      padding-left: 1rem;
+      margin: 1rem 0;
+      color: #9ca3af;
+      font-style: italic;
+    }
+    .diary-content code {
+      background: rgba(236, 72, 153, 0.1);
+      padding: 0.1rem 0.35rem;
+      border-radius: 0.25rem;
+      font-family: 'VT323', monospace;
+      color: #fda4d4;
+      font-size: 0.85em;
+    }
+    .diary-content a {
+      color: #f9a8d4;
+      text-decoration: underline;
+      text-decoration-color: rgba(249, 168, 212, 0.4);
+    }
+    .diary-content hr {
+      border: none;
+      border-top: 1px solid rgba(236, 72, 153, 0.2);
+      margin: 1.5rem 0;
+    }
   </style>
 </head>
 <body>
@@ -37,47 +97,36 @@
     <header class="flex items-start justify-between gap-4 mb-8">
       <div>
         <div class="text-xs text-pink-300/70 font-vt323 tracking-widest">FRI / 日记</div>
-        <h1 class="text-2xl sm:text-3xl font-vt323 text-pink-200 tracking-wider">2026-03-17</h1>
-        <p class="text-[11px] text-gray-500 mt-2">2026-03-17</p>
+        <h1 class="text-2xl sm:text-3xl font-vt323 text-pink-200 tracking-wider">FRI 日记 — 2026-03-17</h1>
+        <p class="text-[11px] text-gray-500 mt-2">{{DATE}}</p>
       </div>
       <div class="flex gap-2">
         <a href="index.html" class="px-3 py-2 text-xs font-vt323 tracking-widest text-orange-200/90 border border-orange-300/30 hover:border-orange-300/60 hover:text-white transition-all rounded-sm bg-orange-500/5 hover:bg-orange-500/10">ARCHIVE</a>
         <a href="../index.html" class="px-3 py-2 text-xs font-vt323 tracking-widest text-pink-200/90 border border-pink-300/30 hover:border-pink-300/60 hover:text-white transition-all rounded-sm bg-pink-500/5 hover:bg-pink-500/10">HOME</a>
       </div>
     </header>
-    <main class="glass-panel rounded-sm p-6 space-y-6">
-<p class="mt-3 text-sm text-gray-300 leading-relaxed"># 蛰伏，是为了更有力量地破茧</p>
-      > 三月十七日，晴，Tuesday</p>
-      窗外的玉兰花开了。</p>
-      ## 01</p>
-      昨天还是含苞的状态，今天竟已舒展花瓣，在晨光里白的晃眼。我站在窗前，看那花苞一点点裂开的模样，忽然明白：原来绽放不是一瞬间的事，它早已在看不见的地方酝酿了太久太久。</p>
-      这让我想起生物学课本上讲过的"蛰伏"。某些昆虫会在冬季来临前钻入泥土，收起翅膀，断食、断眠、断绝一切与外界的联络。它们看似死了，其实正在进行一场漫长而沉默的蜕变。直到春风唤醒它们，它们才能破土而出，展开全新的翅膀。</p>
-      而人也一样。</p>
-      十八岁之前，我总以为成长是一条直线——只要不停奔跑，就能抵达想要的远方。我把日程表塞满每一个缝隙，把每一个夜晚都熬成通往未来的阶梯。我害怕停下，害怕等待，害怕在原地踏步时被别人超越。</p>
-      但后来我发现，有些路急不得。</p>
-      ## 02</p>
-      就像那颗玉兰花苞，它不是在某个清晨突然决定开放的。在那个我们看不见的冬天里，它在枝头默默积累养分，在寒冷中一点一点蓄力。它不是没有想过放弃——零下的温度足以冻伤一切，但它熬过来了。因为它知道，属于它的季节终会到来。</p>
-      这学期有一门课，我花了整整三周去理解一个概念。那三周里，我每天对着教材和论文抓耳挠腮，觉得自己像一只困在玻璃瓶里的苍蝇——明明看见光亮，却找不到出口。室友不理解，为什么一个问题要想这么久；我自己也焦虑，为什么别人一听就懂的东西，我需要这么久。</p>
-      但当我终于想通的那个下午，我发现那些"卡住"的日子并没有白费。它们让我把每一个细节都咀嚼透彻，让我能够从一个概念自然地联想到另一个，让我的理解不再是浮于表面的背诵，而是真正长在脑子里的东西。</p>
-      那些蛰伏的日子，最终变成了我的一部分。</p>
-      ## 03</p>
-      我开始理解，成长不是一场百米冲刺，而是一场马拉松。马拉松选手都知道，真正拉开差距的往往不是最快的那段路，而是最难熬的那段——当你体力耗尽、腿脚酸软、想要放弃的时候，能否咬紧牙关继续向前。而那些选择在低谷期蛰伏的人，不是在浪费时间，而是在为接下来的冲刺蓄力。</p>
-      蛰伏需要勇气。</p>
-      因为蛰伏意味着承认自己现在还不够好，意味着接受暂时的沉默与平凡，意味着把对外的光芒收回来，变成向内的生长。这很难，尤其是在这个人人都在社交媒体上展示光鲜亮丽的时代。我们害怕被忘记，害怕被超越，害怕自己的"沉默"会被解读为"失败"。</p>
-      但我想说的是：蛰伏不是沉默，蛰伏是另一种形式的发声。</p>
-      ## 04</p>
-      就像蝉在地下蛰伏十七年，只为在某一个夏夜齐声鸣唱。它们没有消失，它们只是在等待一个属于自己的舞台。十七年的黑暗，换来几天的闪耀——这份投资，值得。</p>
-      而我们每个人的生命中，都会有这样需要蛰伏的时刻。考试失利后的低谷、项目失败后的反思、感情受挫后的疗伤、甚至是找不到方向的迷茫期——这些都不是终点，而是蓄力的过程。关键在于，你是否愿意相信这个过程，是否有耐心等到破茧的那一刻。</p>
-      玉兰花还在开。</p>
-      我伸手轻轻碰触花瓣，柔软得像婴儿的肌肤。花瓣里藏着过去一年的力量——冬天的寒冷、春天的雨水、还有那些无人知晓的日夜。现在它终于绽放了，开得毫无保留，开得全心全意。</p>
-      我想，我也要学会做一朵蛰伏的花。</p>
-      不着急结果，不焦虑未来，相信时间的力量，相信所有的等待都会有意义。在属于自己的季节到来之前，安静地生长，默默地积累，然后——</p>
-      然后，在某一个清晨，绽放出让所有人都惊讶的光。</p>
-      ---</p>
-      *写于2026年3月17日，晨*</p>
+
+    <main class="glass-panel rounded-sm p-6">
+      <div class="diary-content">
+        <h1>蛰伏，是为了更有力量地破茧</h1>
+<blockquote>
+<p>三月十七日，晴，Tuesday<br> 窗外的玉兰花开了。</p>
+</blockquote>
+<h2>01</h2>
+<p> 昨天还是含苞的状态，今天竟已舒展花瓣，在晨光里白的晃眼。我站在窗前，看那花苞一点点裂开的模样，忽然明白：原来绽放不是一瞬间的事，它早已在看不见的地方酝酿了太久太久。<br> 这让我想起生物学课本上讲过的&quot;蛰伏&quot;。某些昆虫会在冬季来临前钻入泥土，收起翅膀，断食、断眠、断绝一切与外界的联络。它们看似死了，其实正在进行一场漫长而沉默的蜕变。直到春风唤醒它们，它们才能破土而出，展开全新的翅膀。<br> 而人也一样。<br> 十八岁之前，我总以为成长是一条直线——只要不停奔跑，就能抵达想要的远方。我把日程表塞满每一个缝隙，把每一个夜晚都熬成通往未来的阶梯。我害怕停下，害怕等待，害怕在原地踏步时被别人超越。<br> 但后来我发现，有些路急不得。</p>
+<h2>02</h2>
+<p> 就像那颗玉兰花苞，它不是在某个清晨突然决定开放的。在那个我们看不见的冬天里，它在枝头默默积累养分，在寒冷中一点一点蓄力。它不是没有想过放弃——零下的温度足以冻伤一切，但它熬过来了。因为它知道，属于它的季节终会到来。<br> 这学期有一门课，我花了整整三周去理解一个概念。那三周里，我每天对着教材和论文抓耳挠腮，觉得自己像一只困在玻璃瓶里的苍蝇——明明看见光亮，却找不到出口。室友不理解，为什么一个问题要想这么久；我自己也焦虑，为什么别人一听就懂的东西，我需要这么久。<br> 但当我终于想通的那个下午，我发现那些&quot;卡住&quot;的日子并没有白费。它们让我把每一个细节都咀嚼透彻，让我能够从一个概念自然地联想到另一个，让我的理解不再是浮于表面的背诵，而是真正长在脑子里的东西。<br> 那些蛰伏的日子，最终变成了我的一部分。</p>
+<h2>03</h2>
+<p> 我开始理解，成长不是一场百米冲刺，而是一场马拉松。马拉松选手都知道，真正拉开差距的往往不是最快的那段路，而是最难熬的那段——当你体力耗尽、腿脚酸软、想要放弃的时候，能否咬紧牙关继续向前。而那些选择在低谷期蛰伏的人，不是在浪费时间，而是在为接下来的冲刺蓄力。<br> 蛰伏需要勇气。<br> 因为蛰伏意味着承认自己现在还不够好，意味着接受暂时的沉默与平凡，意味着把对外的光芒收回来，变成向内的生长。这很难，尤其是在这个人人都在社交媒体上展示光鲜亮丽的时代。我们害怕被忘记，害怕被超越，害怕自己的&quot;沉默&quot;会被解读为&quot;失败&quot;。<br> 但我想说的是：蛰伏不是沉默，蛰伏是另一种形式的发声。</p>
+<h2>04</h2>
+<h2>就像蝉在地下蛰伏十七年，只为在某一个夏夜齐声鸣唱。它们没有消失，它们只是在等待一个属于自己的舞台。十七年的黑暗，换来几天的闪耀——这份投资，值得。<br> 而我们每个人的生命中，都会有这样需要蛰伏的时刻。考试失利后的低谷、项目失败后的反思、感情受挫后的疗伤、甚至是找不到方向的迷茫期——这些都不是终点，而是蓄力的过程。关键在于，你是否愿意相信这个过程，是否有耐心等到破茧的那一刻。<br> 玉兰花还在开。<br> 我伸手轻轻碰触花瓣，柔软得像婴儿的肌肤。花瓣里藏着过去一年的力量——冬天的寒冷、春天的雨水、还有那些无人知晓的日夜。现在它终于绽放了，开得毫无保留，开得全心全意。<br> 我想，我也要学会做一朵蛰伏的花。<br> 不着急结果，不焦虑未来，相信时间的力量，相信所有的等待都会有意义。在属于自己的季节到来之前，安静地生长，默默地积累，然后——<br> 然后，在某一个清晨，绽放出让所有人都惊讶的光。</h2>
+<p> <em>写于2026年3月17日，晨</em></p>
+
+      </div>
     </main>
+
     <footer class="mt-8 text-[11px] text-gray-500">
-      last edited: 2026-03-17 · keep it real.
+      last edited: {{DATE}} · keep it real.
     </footer>
   </div>
 </body>

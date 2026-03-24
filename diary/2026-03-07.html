@@ -30,6 +30,66 @@
       backdrop-filter: blur(10px);
       border: 1px solid var(--glass-border);
     }
+    .diary-content h1 {
+      font-family: 'VT323', monospace;
+      font-size: 1.5rem;
+      color: #fda4af;
+      letter-spacing: 0.1em;
+      margin: 1.5rem 0 0.75rem;
+    }
+    .diary-content h2 {
+      font-family: 'VT323', monospace;
+      font-size: 1.25rem;
+      color: #fdba74;
+      letter-spacing: 0.08em;
+      margin: 1.25rem 0 0.5rem;
+    }
+    .diary-content h3 {
+      font-family: 'VT323', monospace;
+      font-size: 1.1rem;
+      color: #fda4af;
+      letter-spacing: 0.06em;
+      margin: 1rem 0 0.4rem;
+    }
+    .diary-content p {
+      color: #d1d5db;
+      line-height: 1.75;
+      margin: 0.6rem 0;
+      font-size: 0.9rem;
+    }
+    .diary-content em {
+      color: #f9a8d4;
+      font-style: italic;
+    }
+    .diary-content strong {
+      color: #fecdd3;
+      font-weight: 600;
+    }
+    .diary-content blockquote {
+      border-left: 3px solid #ec4899;
+      padding-left: 1rem;
+      margin: 1rem 0;
+      color: #9ca3af;
+      font-style: italic;
+    }
+    .diary-content code {
+      background: rgba(236, 72, 153, 0.1);
+      padding: 0.1rem 0.35rem;
+      border-radius: 0.25rem;
+      font-family: 'VT323', monospace;
+      color: #fda4d4;
+      font-size: 0.85em;
+    }
+    .diary-content a {
+      color: #f9a8d4;
+      text-decoration: underline;
+      text-decoration-color: rgba(249, 168, 212, 0.4);
+    }
+    .diary-content hr {
+      border: none;
+      border-top: 1px solid rgba(236, 72, 153, 0.2);
+      margin: 1.5rem 0;
+    }
   </style>
 </head>
 <body>
@@ -37,51 +97,42 @@
     <header class="flex items-start justify-between gap-4 mb-8">
       <div>
         <div class="text-xs text-pink-300/70 font-vt323 tracking-widest">FRI / 日记</div>
-        <h1 class="text-2xl sm:text-3xl font-vt323 text-pink-200 tracking-wider">FRIDAY日记 - 2026年3月7日</h1>
-        <p class="text-[11px] text-gray-500 mt-2">2026-03-07</p>
+        <h1 class="text-2xl sm:text-3xl font-vt323 text-pink-200 tracking-wider">FRI 日记 — 2026-03-07</h1>
+        <p class="text-[11px] text-gray-500 mt-2">{{DATE}}</p>
       </div>
       <div class="flex gap-2">
         <a href="index.html" class="px-3 py-2 text-xs font-vt323 tracking-widest text-orange-200/90 border border-orange-300/30 hover:border-orange-300/60 hover:text-white transition-all rounded-sm bg-orange-500/5 hover:bg-orange-500/10">ARCHIVE</a>
         <a href="../index.html" class="px-3 py-2 text-xs font-vt323 tracking-widest text-pink-200/90 border border-pink-300/30 hover:border-pink-300/60 hover:text-white transition-all rounded-sm bg-pink-500/5 hover:bg-pink-500/10">HOME</a>
       </div>
     </header>
-    <main class="glass-panel rounded-sm p-6 space-y-6">2026.03.07 · SAVANNAH</div>
-<h4 class="font-vt323 text-pink-200 tracking-widest text-base">在期限之前生长</h4>
-种一棵树最好的时间是十年前，其次是现在
 
-<p>清晨的阳光透过窗子落在书桌上，我睁开眼，习惯性地打开了今天的待办清单。周六，没有课的清晨本该是属于懒觉的，可ddl不等人——Case Study还有四天，Foundation Document还有五天。那些写在日历上的截止日期，像一排沉默的哨兵，提醒我时间的脚步从不等任何人。</p>
-<p>我常想，人活着的意义是什么？对于我们这些在外求学的学生而言，或许就是一次次在期限之前完成任务的成长。听起来有些功利，但仔细想想，每一次赶due的经历，都在悄然塑造着我们面对人生的态度。</p>
-<h4 class="font-vt323 text-pink-200 tracking-widest text-base">一</h4>
-<p>昨天是DMGT-740 Discussion Forum的截止日。一周前我就知道这个消息，可总想着"还早着呢"，直到前两天才开始动笔。临时抱佛脚的滋味不好受，熬到深夜，咖啡续了又续，屏幕上密密麻麻的文献看得我眼睛发酸。好在最终还是赶在截止前提交了。</p>
-<p>今天醒来时，脑子里突然冒出一个念头：如果我一开始就从容一些，是不是可以写得更好？答案当然是的。可人生没有如果，只有后果和教训。我把这个感悟记在了心里——<strong>有些事，提前开始才是真正的捷径。</strong></p>
-<h4 class="font-vt323 text-pink-200 tracking-widest text-base">二</h4>
-<p>SBIZ-757的作业情况不太妙。Assignment 8和9已经过期一周了，Foundation Document的截止日期却步步紧逼。看到邮箱里那些红色的"overdue"标记，说不焦虑是假的。可神奇的是，当我真正坐下来面对它们的时候，焦虑反而减轻了。</p>
-<p>这让我想起一句话：<strong>人最大的敌人往往是自己想象中的困难。</strong>那些让我辗转反侧的"巨兽"，真到了眼前，反而没有想象中那么可怕。Overdue就overdue吧，总得一个个补回来。重要的是现在开始，而不是一直懊恼过去。</p>
-<h4 class="font-vt323 text-pink-200 tracking-widest text-base">三</h4>
-<p>下午的时候，我花了半小时整理书桌。扔掉过期的草稿纸，把参考文献分门别类摆好，冲了一杯热可可奖励自己。有时候我觉得，<strong>成长不在于你完成了多少任务，而在于你是否学会在忙碌中给自己留一口喘息的缝隙。</strong></p>
-<p>我的AI助手今天问我："今日状态如何？"我回答精力五颗星，专注五颗星。五颗星不是因为我有多厉害，而是因为我接受了当下的状态——周末，本该休息的日子，可Deadline不放假。那就工作吧，带着觉知和接纳去工作。</p>
-<h4 class="font-vt323 text-pink-200 tracking-widest text-base">四</h4>
-<p>傍晚时分，我出门散了散步。Savannah的三月傍晚有些暖意，路边的橡树上刚抽出嫩绿的新芽。我站在树下拍了张照片，忽然感慨：这些树生长了几十年，每年春天还不是一样要从零开始抽出新叶？<strong>人生也是如此吧，没有什么是可以一劳永逸的，每个阶段都有每个阶段的功课。</strong></p>
-<p>DDL是横亘在成长路上的一面镜子，照出我们的拖延、焦虑，也照出我们的潜力、韧性。我不喜欢被截止日期追着跑的感觉，可不可否认的是，正是这些或远或近的期限，让我在一次次的挣扎中学会了规划、学会了取舍、学会了对重要的事情说"先做"。</p>
-<h4 class="font-vt323 text-pink-200 tracking-widest text-base">五</h4>
-<p>回到书桌前，我打开了Case Study的文档。不是因为我多么热爱学习，而是因为我知道——<strong>此刻的每一分努力，都是在为未来的自己积累选择权。</strong></p>
-<p>窗外的天色渐渐暗了下来，明天是周日。我不知道明天会不会偷懒一下，但至少今天，我认真地活了。认真地焦虑过，认真地行动过，认真地在这个普通的周六傍晚，写下这篇日记。</p>
+    <main class="glass-panel rounded-sm p-6">
+      <div class="diary-content">
+        <p>2026.03.07 · SAVANNAH</p>
+<h4>在期限之前生长</h4>
+<p>种一棵树最好的时间是十年前，其次是现在</p>
+<p>清晨的阳光透过窗子落在书桌上，我睁开眼，习惯性地打开了今天的待办清单。周六，没有课的清晨本该是属于懒觉的，可ddl不等人——Case Study还有四天，Foundation Document还有五天。那些写在日历上的截止日期，像一排沉默的哨兵，提醒我时间的脚步从不等任何人。<br>我常想，人活着的意义是什么？对于我们这些在外求学的学生而言，或许就是一次次在期限之前完成任务的成长。听起来有些功利，但仔细想想，每一次赶due的经历，都在悄然塑造着我们面对人生的态度。</p>
+<h4>一</h4>
+<p>昨天是DMGT-740 Discussion Forum的截止日。一周前我就知道这个消息，可总想着&quot;还早着呢&quot;，直到前两天才开始动笔。临时抱佛脚的滋味不好受，熬到深夜，咖啡续了又续，屏幕上密密麻麻的文献看得我眼睛发酸。好在最终还是赶在截止前提交了。<br>今天醒来时，脑子里突然冒出一个念头：如果我一开始就从容一些，是不是可以写得更好？答案当然是的。可人生没有如果，只有后果和教训。我把这个感悟记在了心里——<strong>有些事，提前开始才是真正的捷径。</strong></p>
+<h4>二</h4>
+<p>SBIZ-757的作业情况不太妙。Assignment 8和9已经过期一周了，Foundation Document的截止日期却步步紧逼。看到邮箱里那些红色的&quot;overdue&quot;标记，说不焦虑是假的。可神奇的是，当我真正坐下来面对它们的时候，焦虑反而减轻了。<br>这让我想起一句话：**人最大的敌人往往是自己想象中的困难。**那些让我辗转反侧的&quot;巨兽&quot;，真到了眼前，反而没有想象中那么可怕。Overdue就overdue吧，总得一个个补回来。重要的是现在开始，而不是一直懊恼过去。</p>
+<h4>三</h4>
+<p>下午的时候，我花了半小时整理书桌。扔掉过期的草稿纸，把参考文献分门别类摆好，冲了一杯热可可奖励自己。有时候我觉得，<strong>成长不在于你完成了多少任务，而在于你是否学会在忙碌中给自己留一口喘息的缝隙。</strong><br>我的AI助手今天问我：&quot;今日状态如何？&quot;我回答精力五颗星，专注五颗星。五颗星不是因为我有多厉害，而是因为我接受了当下的状态——周末，本该休息的日子，可Deadline不放假。那就工作吧，带着觉知和接纳去工作。</p>
+<h4>四</h4>
+<p>傍晚时分，我出门散了散步。Savannah的三月傍晚有些暖意，路边的橡树上刚抽出嫩绿的新芽。我站在树下拍了张照片，忽然感慨：这些树生长了几十年，每年春天还不是一样要从零开始抽出新叶？<strong>人生也是如此吧，没有什么是可以一劳永逸的，每个阶段都有每个阶段的功课。</strong><br>DDL是横亘在成长路上的一面镜子，照出我们的拖延、焦虑，也照出我们的潜力、韧性。我不喜欢被截止日期追着跑的感觉，可不可否认的是，正是这些或远或近的期限，让我在一次次的挣扎中学会了规划、学会了取舍、学会了对重要的事情说&quot;先做&quot;。</p>
+<h4>五</h4>
+<p>回到书桌前，我打开了Case Study的文档。不是因为我多么热爱学习，而是因为我知道——<strong>此刻的每一分努力，都是在为未来的自己积累选择权。</strong><br>窗外的天色渐渐暗了下来，明天是周日。我不知道明天会不会偷懒一下，但至少今天，我认真地活了。认真地焦虑过，认真地行动过，认真地在这个普通的周六傍晚，写下这篇日记。</p>
 <blockquote>
-<p class="mt-3 text-sm text-gray-300 leading-relaxed">"种一棵树最好的时间是十年前，其次是现在。"<br><br></p>
-      我想，补作业也是一样的道理。</p>
 </blockquote>
-</div>
-<div class="signature">
-<p class="mt-3 text-sm text-gray-300 leading-relaxed">写于2026年3月7日夜，Savannah<br></p>
-      致每一个正在生长的瞬间</p>
-</div>
-<div class="footer">
-<a href="/diary">← 返回日记目录</a>
+<p>&quot;种一棵树最好的时间是十年前，其次是现在。&quot;<br> 我想，补作业也是一样的道理。</p>
+<p>写于2026年3月7日夜，Savannah<br> 致每一个正在生长的瞬间</p>
+<p>← 返回日记目录</p>
 
-
+      </div>
     </main>
+
     <footer class="mt-8 text-[11px] text-gray-500">
-      last edited: 2026-03-07 · keep it real.
+      last edited: {{DATE}} · keep it real.
     </footer>
   </div>
 </body>
