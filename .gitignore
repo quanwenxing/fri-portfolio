@@ -1,1 +1,5 @@
 node_modules/
+.next/
+.superpowers/
+.cache/
+next-env.d.ts
