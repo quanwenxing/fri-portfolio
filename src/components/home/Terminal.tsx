@@ -271,35 +271,40 @@ export function Terminal({ stats }: TerminalProps) {
       </div>
 
       {/* Command input */}
-      <div className="relative group pt-5 mt-1">
-        <div className="absolute -top-3 left-2 text-[10px] text-pink-500 bg-[#0a1525] px-1 font-tech">
+      <div className="relative mt-3">
+        {/* label sits on the border line */}
+        <span className="absolute -top-[7px] left-3 px-1.5 text-[9px] font-vt323 tracking-widest text-pink-500/70 bg-[var(--glass-bg)] z-10">
           COMMAND INPUT
-        </div>
-        <input
-          ref={inputRef}
-          type="text"
-          className="w-full bg-[#0a1525]/50 border border-pink-500/30 text-pink-100 font-tech py-3.5 px-4 pr-14 rounded focus:outline-none focus:border-pink-400 transition-all placeholder-pink-900/60 text-base min-h-[48px]"
-          placeholder="Enter command or query... (try /help)"
-          autoComplete="off"
-          value={input}
-          onChange={(e) => setInput(e.target.value)}
-          onKeyDown={handleKeyDown}
-        />
-        <button
-          type="button"
-          className="absolute right-2 top-1/2 -translate-y-1/2 p-2 min-w-[44px] min-h-[44px] flex items-center justify-center text-pink-500 hover:text-white transition-colors"
-          title="Send"
-          aria-label="Send"
-          onClick={submit}
-        >
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img
-            src="https://unpkg.com/pixelarticons@1.8.1/svg/arrow-right.svg"
-            className="pa-icon w-5 h-5 inline-block"
-            alt=""
-            aria-hidden="true"
+        </span>
+        <div className="flex items-center border border-pink-500/25 bg-[#080818]/60 focus-within:border-pink-400/50 transition-colors">
+          <span className="pl-3 text-xs font-vt323 text-neon-coral/50 select-none shrink-0">
+            fri&gt;
+          </span>
+          <input
+            ref={inputRef}
+            type="text"
+            className="flex-1 bg-transparent text-pink-100 font-vt323 text-sm py-3 px-2 focus:outline-none placeholder-pink-900/40"
+            placeholder="type /help"
+            autoComplete="off"
+            value={input}
+            onChange={(e) => setInput(e.target.value)}
+            onKeyDown={handleKeyDown}
           />
-        </button>
+          <button
+            type="button"
+            className="px-3 py-3 text-pink-500/50 hover:text-pink-300 transition-colors shrink-0"
+            title="Send"
+            aria-label="Send"
+            onClick={submit}
+          >
+            <img
+              src="https://unpkg.com/pixelarticons@1.8.1/svg/arrow-right.svg"
+              className="pa-icon w-4 h-4 inline-block"
+              alt=""
+              aria-hidden="true"
+            />
+          </button>
+        </div>
       </div>
     </div>
   );
