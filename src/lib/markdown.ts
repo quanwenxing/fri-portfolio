@@ -20,18 +20,29 @@ marked.setOptions({
 const URL_REGEX = /^https?:\/\/\S+$/;
 
 function buildPreviewCard(url: string, og: { title: string; description: string; image: string; siteName: string }): string {
-  const imgBlock = og.image
-    ? `<div class="h-32 overflow-hidden"><img src="${og.image}" alt="" class="w-full h-full object-cover" /></div>`
-    : "";
   const descBlock = og.description
     ? `<div class="text-xs text-gray-400 line-clamp-2">${og.description}</div>`
     : "";
 
+  if (og.image) {
+    return `<a href="${url}" target="_blank" rel="noopener noreferrer" class="block my-4 no-underline">
+      <div class="glass-panel overflow-hidden hover:border-pink-400/60 transition-colors flex">
+        <div class="w-28 sm:w-36 shrink-0 overflow-hidden border-r border-pink-500/15">
+          <img src="${og.image}" alt="" class="w-full h-full object-cover" />
+        </div>
+        <div class="p-3 flex-1 min-w-0 flex flex-col justify-center">
+          <div class="text-[10px] font-vt323 text-pink-500/60 mb-0.5 tracking-wider">${og.siteName}</div>
+          <div class="text-sm font-vt323 text-pink-200 mb-1 truncate">${og.title}</div>
+          ${descBlock}
+        </div>
+      </div>
+    </a>`;
+  }
+
   return `<a href="${url}" target="_blank" rel="noopener noreferrer" class="block my-4 no-underline">
-      <div class="glass-panel rounded-sm overflow-hidden hover:border-pink-400/60 transition-colors">
-        ${imgBlock}
-        <div class="p-4">
-          <div class="text-xs font-tech text-pink-500/70 mb-1">${og.siteName}</div>
+      <div class="glass-panel overflow-hidden hover:border-pink-400/60 transition-colors">
+        <div class="p-3">
+          <div class="text-[10px] font-vt323 text-pink-500/60 mb-0.5 tracking-wider">${og.siteName}</div>
           <div class="text-sm font-vt323 text-pink-200 mb-1">${og.title}</div>
           ${descBlock}
         </div>
