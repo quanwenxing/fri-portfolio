@@ -7,6 +7,7 @@
 
 import Link from "next/link";
 import type { Entry } from "@/lib/content";
+import { CoverImage } from "./CoverImage";
 
 /* ------------------------------------------------------------------ */
 /*  Props                                                              */
@@ -33,6 +34,13 @@ export function EntryPage({ entry, type, backHref }: EntryPageProps) {
         >
           &larr; BACK TO {type === "diary" ? "DIARY" : "WEEKLY"}
         </Link>
+
+        {/* -- cover ------------------------------------------------- */}
+        {entry.cover && (
+          <div className="mb-8 overflow-hidden border border-pink-500/15 max-h-72">
+            <CoverImage src={entry.cover} className="w-full" />
+          </div>
+        )}
 
         {/* -- meta -------------------------------------------------- */}
         <header className="mb-8">
