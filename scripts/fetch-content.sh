@@ -17,10 +17,8 @@ fi
 
 TOKEN="${CONTENT_GITHUB_TOKEN:-$DIARY_GITHUB_TOKEN}"
 
-if [ -z "$TOKEN" ]; then
-  echo "[fetch-content] No GitHub token set, skipping content fetch"
-  exit 0
-fi
+# Trim whitespace/newlines from token
+TOKEN=$(echo "$TOKEN" | tr -d '\n' | tr -d ' ')
 
 echo "[fetch-content] Cloning content from private repo..."
 git clone --depth 1 "https://x-access-token:${TOKEN}@github.com/quanwenxing/fri-content.git" /tmp/fri-content-clone
